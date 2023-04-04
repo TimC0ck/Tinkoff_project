@@ -4,3 +4,4 @@ ru.tinkoff.edu.java.scrapper.configuration.ApplicationConfig=org.springframework
 ru.tinkoff.edu.java.scrapper.controllers.ScrapperControllerLinks=org.springframework.stereotype.Component
 ru.tinkoff.edu.java.scrapper.controllers.ScrapperControllerTgChat=org.springframework.stereotype.Component
 ru.tinkoff.edu.java.scrapper.controllers.ScrapperExeptionHandler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.scheduler.LinkUpdateScheduler=org.springframework.stereotype.Component

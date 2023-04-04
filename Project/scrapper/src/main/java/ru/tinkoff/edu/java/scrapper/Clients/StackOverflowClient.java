@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.scrapper.ClientRef;
+package ru.tinkoff.edu.java.scrapper.Clients;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.reactive.function.client.WebClient;
