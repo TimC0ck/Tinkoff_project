@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
-import ru.tinkoff.edu.java.scrapper.TelegramBot.TeleBot;
 import ru.tinkoff.edu.java.scrapper.configuration.ApplicationConfig;
 
 
@@ -18,7 +17,5 @@ public class ScrapperApplication {
         var ctx = SpringApplication.run(ScrapperApplication.class, args);
         ApplicationConfig config = ctx.getBean(ApplicationConfig.class);
         System.out.println(config);
-        TeleBot teleBot = new TeleBot();
-        teleBot.serve();
     }
 }
