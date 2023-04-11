@@ -19,11 +19,12 @@ public class BotApplication {
         System.out.println(config);
         ScrapperClient Client = ctx.getBean(ScrapperClient.class);
         Bot bot = new Bot(
-                config.bot().token(),
-                new Start(Client),
-                new List(Client),
-                new Track(Client),
-                new Untrack(Client),
-                new Help());
+//                config.bot().token(),
+//                new Start(),
+//                new List(),
+//                new Track(),
+//                new Untrack(),
+//                new Help()
+                );
     }
 }

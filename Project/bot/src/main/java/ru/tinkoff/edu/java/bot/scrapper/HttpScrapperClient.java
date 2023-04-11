@@ -118,13 +118,15 @@ public class HttpScrapperClient implements ScrapperClient {
                 .bodyToMono(LinksResponse.class).block();
     }
 
-    private Mono<? extends RuntimeException> onClientErrorInternal(ClientResponse resp, String when) {
+    private Mono onClientErrorInternal(ClientResponse resp, String when) {
         LOGGER.error("Incorrect Scrapper API request while " + when);
-        return resp.bodyToMono(ApiErrorResponse.class).map(ApiClientErrorException::new);
+        return null;
+//        resp.bodyToMono(ApiErrorResponse.class).map(ApiClientErrorException::new)
     }
 
-    private Mono<? extends RuntimeException> onServerErrorInternal(ClientResponse resp, String when) {
+    private Mono onServerErrorInternal(ClientResponse resp, String when) {
         LOGGER.error("Scrapper API server error while " + when);
-        return resp.bodyToMono(ApiErrorResponse.class).map(internalServerErrorException::new);
+        return null;
+//        resp.bodyToMono(ApiErrorResponse.class).map(internalServerErrorException::new)
     }
 }
