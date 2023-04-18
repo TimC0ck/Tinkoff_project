@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import ru.tinkoff.edu.java.bot.Commands.*;
 import ru.tinkoff.edu.java.bot.configuration.ApplicationConfig;
 import ru.tinkoff.edu.java.bot.BotCreator.Bot;
+import ru.tinkoff.edu.java.bot.scrapper.HttpScrapperClient;
 import ru.tinkoff.edu.java.bot.scrapper.ScrapperClient;
 
 @ComponentScan
@@ -17,14 +18,13 @@ public class BotApplication {
         var ctx = SpringApplication.run(BotApplication.class, args);
         ApplicationConfig config = ctx.getBean(ApplicationConfig.class);
         System.out.println(config);
-        ScrapperClient Client = ctx.getBean(ScrapperClient.class);
-        Bot bot = new Bot(
-//                config.bot().token(),
-//                new Start(),
-//                new List(),
-//                new Track(),
-//                new Untrack(),
-//                new Help()
-                );
+        ScrapperClient client = ctx.getBean(ScrapperClient.class);
+        Bot TgBot = new Bot(
+                config.bot().token(),
+                new Start(client),
+                new List(client),
+                new Track(client),
+                new Untrack(client),
+                new Help());
     }
 }

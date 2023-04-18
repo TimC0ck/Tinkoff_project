@@ -3,6 +3,7 @@ package ru.tinkoff.edu.java.bot.scrapper;
 import ru.tinkoff.edu.java.bot.records.LinkApiResponse;
 import ru.tinkoff.edu.java.bot.records.LinksResponse;
 
+
 public interface ScrapperClient {
 
     void registerChat(long chatId);

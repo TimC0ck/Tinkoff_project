@@ -10,12 +10,10 @@ import ru.tinkoff.edu.java.bot.records.DeleteLinkRequest;
 import ru.tinkoff.edu.java.bot.records.LinkApiResponse;
 import ru.tinkoff.edu.java.bot.records.LinksResponse;
 import ru.tinkoff.edu.java.bot.records.AddLinkRequest;
-import ru.tinkoff.edu.java.scrapper.DTO.response.ApiErrorResponse;
 
 
 import static org.springframework.http.HttpMethod.DELETE;
-import ru.tinkoff.edu.java.bot.exceptions.internalServerErrorException;
-import ru.tinkoff.edu.java.bot.exceptions.ApiClientErrorException;
+
 public class HttpScrapperClient implements ScrapperClient {
 
     public static final String TG_CHAT_ID_HEADER = "Tg-Chat-Id";

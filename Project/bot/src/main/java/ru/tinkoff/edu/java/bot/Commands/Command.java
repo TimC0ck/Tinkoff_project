@@ -11,7 +11,7 @@ public interface Command {
 
     SendMessage serve(Update update);
 
-    default BotCommand toApiCommand() {
+    default BotCommand toBotCommand() {
         return new BotCommand(command(), description());
     }
 }

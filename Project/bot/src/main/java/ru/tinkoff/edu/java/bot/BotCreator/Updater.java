@@ -52,7 +52,7 @@ public class Updater {
     }
 
     private SendMessage invalidCommandMessage(Update update) {
-        return new SendMessage(update.message().chat().id(), "<b>Это пиздец!</b>\n " +
-                "Чтобы ебануться в край, напишите /help").parseMode(ParseMode.HTML);
+        return new SendMessage(update.message().chat().id(), "<b>Комманды не существует</b>\n " +
+                "Чтобы получить список комманд, введите /help").parseMode(ParseMode.HTML);
     }
 }
