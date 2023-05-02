@@ -9,6 +9,8 @@ import ru.tinkoff.edu.java.bot.Commands.Command;
 import ru.tinkoff.edu.java.bot.Commands.Track;
 import ru.tinkoff.edu.java.bot.Commands.Untrack;
 
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -39,20 +41,19 @@ public class Updater {
                 if (processor instanceof Untrack) {
                     untrackRequest.add(update.message().chat().id());
                 }
-                return processor.serve(update);
+                return processor.process(update);
             }
         }
         if (trackRequest.contains(update.message().chat().id())) {
-            return commands.stream().filter(el -> el.command().equals("track")).findFirst().get().serve(update);
+            return commands.stream().filter(el -> el.command().equals("track")).findFirst().get().process(update);
         }
         if (untrackRequest.contains(update.message().chat().id())) {
-            return commands.stream().filter(el -> el.command().equals("untrack")).findFirst().get().serve(update);
+            return commands.stream().filter(el -> el.command().equals("untrack")).findFirst().get().process(update);
         }
         return invalidCommandMessage(update);
     }
 
     private SendMessage invalidCommandMessage(Update update) {
-        return new SendMessage(update.message().chat().id(), "<b>Комманды не существует</b>\n " +
-                "Чтобы получить список комманд, введите /help").parseMode(ParseMode.HTML);
+        return new SendMessage(update.message().chat().id(), "Неизвестная команда");
     }
 }

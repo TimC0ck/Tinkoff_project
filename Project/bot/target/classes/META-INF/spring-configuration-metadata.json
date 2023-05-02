@@ -8,12 +8,12 @@
   ],
   "properties": [
     {
-      "name": "app.bot",
-      "type": "ru.tinkoff.edu.java.bot.configuration.BotConfiguration",
+      "name": "app.test",
+      "type": "java.lang.String",
       "sourceType": "ru.tinkoff.edu.java.bot.configuration.ApplicationConfig"
     },
     {
-      "name": "app.test",
+      "name": "app.token",
       "type": "java.lang.String",
       "sourceType": "ru.tinkoff.edu.java.bot.configuration.ApplicationConfig"
     }

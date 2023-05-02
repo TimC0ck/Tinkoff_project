@@ -1,7 +1,7 @@
 package ru.tinkoff.edu.java.bot.exceptions;
 
 
-import ru.tinkoff.edu.java.bot.DTO.ApiErrorResponse;
+import ru.tinkoff.edu.java.bot.DTO.response.ApiErrorResponse;
 
 
 public class internalServerErrorException extends RuntimeException {

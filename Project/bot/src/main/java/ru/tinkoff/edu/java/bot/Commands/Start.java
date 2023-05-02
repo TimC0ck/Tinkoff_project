@@ -4,12 +4,12 @@ import com.github.dockerjava.api.exception.InternalServerErrorException;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
-import ru.tinkoff.edu.java.bot.exceptions.ApiClientErrorException;
+import lombok.AllArgsConstructor;
 import ru.tinkoff.edu.java.bot.scrapper.ScrapperClient;
 
-public class Start implements Command{
-    private ScrapperClient scrapperClient;
-
+@AllArgsConstructor
+public class Start implements Command {
+    private final ScrapperClient client;
 
     @Override
     public String command() {
@@ -18,23 +18,18 @@ public class Start implements Command{
 
     @Override
     public String description() {
-        return "Регистрирует пользователя";
+        return "Зарегистрировать пользователя";
     }
 
     @Override
-    public SendMessage serve(Update update){
-        try {
-            scrapperClient.registerChat(update.message().chat().id());
-        } catch (InternalServerErrorException e) {
-            System.out.println();
-        } catch (ApiClientErrorException e) {
-            return new SendMessage(update.message().chat().id(),"Пользователь уже зарегистрирован");
-        }
-        return new SendMessage(update.message().chat().id(), getText(update.message().chat().firstName()))
+    public SendMessage process(Update update) {
+        client.registerChat(update.message().chat().id());
+        return new SendMessage(update.message().chat().id(), getMessageText(update.message().chat().firstName()))
                 .parseMode(ParseMode.HTML);
     }
 
-    private String getText(String Name) {
-        return "<b>Чтобы получить список команд, используйте команду</b>  /help";
+    private String getMessageText(String name) {
+        return "Приветствую вас, <i>" + name + "</i>!\n"
+                + "Чтобы получить список доступных команд, используйте команду /help";
     }
 }
