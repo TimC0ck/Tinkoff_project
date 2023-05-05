@@ -1,5 +1,16 @@
 package ru.tinkoff.edu.java.scrapper.DTO.request;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.net.URI;
 
-public record AddLinkRequest(URI url) {}
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class AddLinkRequest {
+    private URI url;
+}
