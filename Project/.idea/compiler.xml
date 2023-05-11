@@ -14,13 +14,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="scrapper" />
+        <module name="scrapper-jooq" />
         <module name="link-parser" />
         <module name="bot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Project" target="1.5" />
-      <module name="scrapper-jooq" target="17" />
+      <module name="project (1)" target="1.5" />
+      <module name="project (2)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="bot" options="-parameters" />
       <module name="link-parser" options="-parameters" />
       <module name="scrapper" options="-parameters" />
+      <module name="scrapper-jooq" options="-parameters" />
     </option>
   </component>
 </project>

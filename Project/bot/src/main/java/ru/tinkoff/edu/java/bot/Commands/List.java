@@ -1,14 +1,15 @@
 package ru.tinkoff.edu.java.bot.Commands;
 
-import com.github.dockerjava.api.exception.InternalServerErrorException;
 import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.ParseMode;
 import com.pengrad.telegrambot.request.SendMessage;
-import ru.tinkoff.edu.java.bot.exceptions.ApiClientErrorException;
-import ru.tinkoff.edu.java.bot.records.LinkApiResponse;
+import lombok.AllArgsConstructor;
+import ru.tinkoff.edu.java.bot.records.LinksResponse;
 import ru.tinkoff.edu.java.bot.scrapper.ScrapperClient;
 
-public class List implements Command{
-    private final ScrapperClient scrapperClient = null;
+@AllArgsConstructor
+public class List implements Command {
+    private final ScrapperClient client;
 
     @Override
     public String command() {
@@ -17,28 +18,28 @@ public class List implements Command{
 
     @Override
     public String description() {
-        return "Показывает список отслеживаемых ссылок";
+        return "Показать список отслеживаемых ссылок";
     }
 
     @Override
-    public SendMessage serve(Update update) {
-        LinkApiResponse listLinksResponse;
-        try {
-            listLinksResponse = scrapperClient.getAllLinks(update.message().chat().id());
-        } catch (ApiClientErrorException e) {
-            return new SendMessage(update.message().chat().id(),"Список отслеживаемых ссылок пуст!");
-        } catch (InternalServerErrorException e) {
-            return new SendMessage(update.message().chat().id(),"Список отслеживаемых ссылок пуст!");
+    public SendMessage process(Update update) {
+        LinksResponse response = client.getListLinks(update.message().chat().id());
+        if (response.getLinks() == null) {
+            return new SendMessage(update.message().chat().id(), "Ошибка при извлечении данных, попробуйте еще раз");
         }
-        var builder = new StringBuilder();
-        if (listLinksResponse.size() == 0) {
-            builder.append("Список отслеживаемых ссылок пуст!");
-        } else {
-            builder.append("Вы отслеживаете следующие ссылки:\n");
-            listLinksResponse.links().forEach(x -> builder.append(x.url()).append("\n"));
+        if (response.getSize() == 0) {
+            return new SendMessage(update.message().chat().id(), "Список отслеживаемых ссылок пуст!\n"
+                    + "Чтобы добавить ссылку для отслеживания, используйте команду /track");
         }
-        return new SendMessage(update.message().chat().id(), builder.toString());
+        return new SendMessage(update.message().chat().id(), getMessageText(response))
+                .parseMode(ParseMode.HTML);
     }
 
+    private String getMessageText(LinksResponse list) {
+        StringBuilder result = new StringBuilder("<b>Список отслеживаемых ссылок:</b>\n");
+        for (int i = 0; i < list.getSize(); i++) {
+            result.append(i + 1).append(". ").append(list.getLinks().get(i).url().toString()).append("\n");
+        }
+        return result.toString();
+    }
 }
-

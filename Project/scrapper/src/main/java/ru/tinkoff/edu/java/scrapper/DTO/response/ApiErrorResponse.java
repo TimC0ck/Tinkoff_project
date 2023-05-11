@@ -1,9 +1,20 @@
 package ru.tinkoff.edu.java.scrapper.DTO.response;
 
-import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-public record ApiErrorResponse(@NotNull String description,
-                               @NotNull String code,
-                               @NotNull String exceptionName,
-                               @NotNull String exceptionMessage,
-                               @NotNull String[] stacktrace) {}
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ApiErrorResponse {
+    private String description;
+    private String code;
+    private String exceptionName;
+    private String exceptionMessage;
+    private List<String> stacktrace;
+}

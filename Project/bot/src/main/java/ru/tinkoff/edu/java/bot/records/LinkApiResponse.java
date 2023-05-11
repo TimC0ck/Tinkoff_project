@@ -1,6 +1,18 @@
 package ru.tinkoff.edu.java.bot.records;
 
-import ru.tinkoff.edu.java.scrapper.DTO.response.LinkResponse;
-import java.util.List;
-public record LinkApiResponse(List<LinkResponse> links, int size) {
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.net.URI;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class LinkApiResponse {
+    private Long id;
+    private URI url;
 }

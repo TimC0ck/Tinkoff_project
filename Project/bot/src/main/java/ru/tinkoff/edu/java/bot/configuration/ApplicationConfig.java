@@ -5,4 +5,4 @@ import org.springframework.validation.annotation.Validated;
 
 @Validated
 @ConfigurationProperties(prefix = "app", ignoreUnknownFields = false)
-public record ApplicationConfig(@NotNull String test, @NotNull BotConfiguration bot) {}
+public record ApplicationConfig(@NotNull String test, @NotNull String token) {}
