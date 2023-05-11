@@ -20,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Project" target="1.5" />
+      <module name="scrapper-jooq" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
