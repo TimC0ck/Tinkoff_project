@@ -1,5 +1,9 @@
 ru.tinkoff.edu.java.bot.BotApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
-ru.tinkoff.edu.java.bot.configuration.ApplicationConfig=org.springframework.boot.context.properties.ConfigurationProperties
+ru.tinkoff.edu.java.bot.configuration.BotConfig=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.configuration.ClientConfig=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.configuration.RabbitMQConfig=org.springframework.stereotype.Component
 ru.tinkoff.edu.java.bot.controllers.BotController=org.springframework.stereotype.Component
 ru.tinkoff.edu.java.bot.controllers.BotExeptionHandler=org.springframework.stereotype.Component
 ru.tinkoff.edu.java.bot.handler.ExceptionsHandler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.receiver.HttpLinkUpdateReceiverConfig=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.receiver.QueueLinkUpdateReceiverConfig=org.springframework.stereotype.Component

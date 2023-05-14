@@ -3,7 +3,7 @@ package ru.tinkoff.edu.java.bot;
 import org.springframework.boot.SpringApplication;
         import org.springframework.boot.autoconfigure.SpringBootApplication;
         import org.springframework.boot.context.properties.EnableConfigurationProperties;
-        import org.springframework.context.annotation.ComponentScan;
+
         import ru.tinkoff.edu.java.bot.Commands.*;
         import org.springframework.context.annotation.Bean;
         import ru.tinkoff.edu.java.bot.configuration.ApplicationConfig;

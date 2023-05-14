@@ -1,5 +1,6 @@
 package ru.tinkoff.edu.java.bot.DTO.response;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class LinksResponse {
-    private List<LinkApiResponse> links;
+    private List<LinksResponse> links;
     private Integer size;
 }

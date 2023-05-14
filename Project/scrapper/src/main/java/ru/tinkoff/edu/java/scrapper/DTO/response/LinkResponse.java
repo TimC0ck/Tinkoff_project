@@ -1,8 +1,17 @@
 package ru.tinkoff.edu.java.scrapper.DTO.response;
 
-import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.net.URI;
 
-public record LinkResponse(@NotNull int id,@NotNull URI url) {
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class LinkResponse {
+    private Long id;
+    private URI url;
 }

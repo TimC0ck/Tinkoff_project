@@ -1,0 +1,34 @@
+Index: bot/bot.iml
+===================================================================
+diff --git a/bot/bot.iml b/bot/bot.iml
+deleted file mode 100644
+--- a/bot/bot.iml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+-    </content>
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CompilerConfiguration\">\n    <excludeFromCompile>\n      <directory url=\"file://$PROJECT_DIR$/src/main/resources/archetype-resources\" includeSubdirectories=\"true\" />\n      <directory url=\"file://$PROJECT_DIR$/bot/src/main/resources/archetype-resources\" includeSubdirectories=\"true\" />\n      <directory url=\"file://$PROJECT_DIR$/link-parser/src/main/resources/archetype-resources\" includeSubdirectories=\"true\" />\n      <directory url=\"file://$PROJECT_DIR$/scrapper/src/main/resources/archetype-resources\" includeSubdirectories=\"true\" />\n    </excludeFromCompile>\n    <annotationProcessing>\n      <profile default=\"true\" name=\"Default\" enabled=\"true\" />\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\n        <outputRelativeToContentRoot value=\"true\" />\n        <module name=\"scrapper\" />\n        <module name=\"link-parser\" />\n        <module name=\"bot\" />\n      </profile>\n    </annotationProcessing>\n    <bytecodeTargetLevel>\n      <module name=\"Project\" target=\"1.5\" />\n      <module name=\"project (1)\" target=\"1.5\" />\n      <module name=\"project (2)\" target=\"17\" />\n    </bytecodeTargetLevel>\n  </component>\n  <component name=\"JavacSettings\">\n    <option name=\"ADDITIONAL_OPTIONS_OVERRIDE\">\n      <module name=\"bot\" options=\"-parameters\" />\n      <module name=\"link-parser\" options=\"-parameters\" />\n      <module name=\"scrapper\" options=\"-parameters\" />\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	
++++ b/.idea/compiler.xml	
+@@ -22,6 +22,7 @@
+       <module name="Project" target="1.5" />
+       <module name="project (1)" target="1.5" />
+       <module name="project (2)" target="17" />
++      <module name="scrapper-jooq" target="17" />
+     </bytecodeTargetLevel>
+   </component>
+   <component name="JavacSettings">

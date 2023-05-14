@@ -1,6 +1,5 @@
 package ru.tinkoff.edu.java.scrapper.api;
 
-
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import ru.tinkoff.edu.java.scrapper.DTO.request.LinkUpdate;

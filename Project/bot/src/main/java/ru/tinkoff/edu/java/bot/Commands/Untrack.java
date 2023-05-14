@@ -1,10 +1,8 @@
 package ru.tinkoff.edu.java.bot.Commands;
 
-import com.github.dockerjava.api.exception.InternalServerErrorException;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SendMessage;
 import lombok.AllArgsConstructor;
-import ru.tinkoff.edu.java.bot.exceptions.ApiClientErrorException;
 import ru.tinkoff.edu.java.bot.scrapper.ScrapperClient;
 
 

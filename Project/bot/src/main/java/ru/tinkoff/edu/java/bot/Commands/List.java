@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import ru.tinkoff.edu.java.bot.records.LinksResponse;
 import ru.tinkoff.edu.java.bot.scrapper.ScrapperClient;
 
+
 @AllArgsConstructor
 public class List implements Command {
     private final ScrapperClient client;
@@ -38,7 +39,7 @@ public class List implements Command {
     private String getMessageText(LinksResponse list) {
         StringBuilder result = new StringBuilder("<b>Список отслеживаемых ссылок:</b>\n");
         for (int i = 0; i < list.getSize(); i++) {
-            result.append(i + 1).append(". ").append(list.getLinks().get(i).url().toString()).append("\n");
+            result.append(i + 1).append(". ").append(list.getLinks().get(i).getUrl().toString()).append("\n");
         }
         return result.toString();
     }
