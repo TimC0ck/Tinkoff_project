@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jooq.Constants;
 import org.jooq.Schema;
 import org.jooq.impl.CatalogImpl;
-import org.jooq.meta.cubrid.dba.DefaultSchema;
+
 
 
 /**

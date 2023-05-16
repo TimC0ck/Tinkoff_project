@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc9a837a-0173-45fe-968c-aca21437ccd4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_05_2023,_03_27_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_05_2023,_03_27_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_05_2023__03_27__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_05_2023__03_27__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/bot.Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/checkstyle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/configuration/BotConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/configuration/ClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/configuration/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/receiver/HttpLinkUpdateReceiverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/receiver/QueueLinkUpdateReceiverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/service/HttpLinkUpdateReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/service/LinkUpdateReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/service/QueueLinkUpdateReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/configuration/BotConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/configuration/ClientConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/configuration/RabbitMQConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/receiver/HttpLinkUpdateReceiverConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/receiver/QueueLinkUpdateReceiverConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/service/HttpLinkUpdateReceiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/service/LinkUpdateReceiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/service/QueueLinkUpdateReceiver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper.Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/access/AccessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/access/JdbcAccessConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/access/JooqAccessConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/access/JpaAccessConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/sender/HttpUpdateSenderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/configuration/sender/QueueUpdateSenderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/ChatLinkEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/LinkEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/TgChatEntityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/ChatLinkEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/LinkEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/TgChatEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/jpa/JpaLinkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/jpa/JpaTgChatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/sender/HttpLinkUpdateSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/sender/LinkUpdateSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/sender/QueueLinkUpdateSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/classpath.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/RabbitMQConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/access/AccessType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/access/JdbcAccessConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/access/JooqAccessConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/access/JpaAccessConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/sender/HttpUpdateSenderConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/configuration/sender/QueueUpdateSenderConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/ChatLinkEntityRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/LinkEntityRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/TgChatEntityRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/ChatLinkEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/LinkEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/repository/jpa/entity/TgChatEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/jpa/JpaLinkService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/jpa/JpaTgChatService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/sender/HttpLinkUpdateSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/sender/LinkUpdateSender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/sender/QueueLinkUpdateSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/bot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bot/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/BotApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/BotApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/BotCreator/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/BotCreator/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/Untrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/Commands/Untrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/DTO/response/ApiErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/DTO/response/ApiErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/DTO/response/LinksResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/DTO/response/LinksResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/records/LinksResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/bot/src/main/java/ru/tinkoff/edu/java/bot/records/LinksResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/bot-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/META-INF/spring.components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/BotApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/BotApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/BotCreator/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/BotCreator/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/List.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/List.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/Start.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/Untrack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/Commands/Untrack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/DTO/response/ApiErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/DTO/response/ApiErrorResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/DTO/response/LinksResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/DTO/response/LinksResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/configuration/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/configuration/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/records/LinksResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bot/target/classes/ru/tinkoff/edu/java/bot/records/LinksResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-parser/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/link-parser/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-parser/target/link-parser-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-parser/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-parser/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/link-parser/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper-jooq/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bot.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper-jooq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/IntegrationEnvironment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/IntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/ScrapperApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/controllers/ScrapperExeptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/scheduler/LinkUpdateScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/Updater/LinkManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/Updater/LinkManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/converter/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/src/main/java/ru/tinkoff/edu/java/scrapper/service/converter/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/META-INF/spring.components" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/META-INF/spring.components" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/ScrapperApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/controllers/ScrapperExeptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultCatalog.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultCatalog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultSchema.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/DefaultSchema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/ChatLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/ChatLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/Chat.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/Chat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/ChatLink.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/ChatLink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/pojos/Link.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/ChatLinkRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/ChatLinkRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/ChatRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/ChatRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/LinkRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/domain/jooq/tables/records/LinkRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/scheduler/LinkUpdateScheduler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/Updater/LinkManipulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/Updater/LinkManipulator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/converter/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper/target/classes/ru/tinkoff/edu/java/scrapper/service/converter/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/scrapper.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper/target/scrapper-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PeIy4SgbzcQngfmzsFD2o7qbvs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.BotApplication">
+    <configuration name="BotApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.tinkoff.edu.java.bot.BotApplication" />
+      <module name="bot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.tinkoff.edu.java.bot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in bot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in scrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scrapper" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BotApplication" />
+        <item itemvalue="JUnit.All in bot" />
+        <item itemvalue="JUnit.All in scrapper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc9a837a-0173-45fe-968c-aca21437ccd4" name="Changes" comment="" />
+      <created>1683811372335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683811372335</updated>
+    </task>
+    <servers />
+  </component>
+</project>

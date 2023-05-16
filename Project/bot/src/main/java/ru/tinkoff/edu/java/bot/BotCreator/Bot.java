@@ -6,6 +6,7 @@ import com.pengrad.telegrambot.model.BotCommand;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.request.SetMyCommands;
 import ru.tinkoff.edu.java.bot.Commands.Command;
+import com.pengrad.telegrambot.request.SendMessage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,5 +28,10 @@ public class Bot implements UpdatesListener {
             telegramBot.execute(processor.processCommand(update));
         }
         return UpdatesListener.CONFIRMED_UPDATES_ALL;
+    }
+    public void sendMessages(String description, List<Long> tgChatIds) {
+        for (Long tgChatId: tgChatIds) {
+            telegramBot.execute(new SendMessage(tgChatId, description));
+        }
     }
 }
